@@ -7,7 +7,7 @@ from shutil import rmtree
 from tempfile import mkdtemp
 from textwrap import TextWrapper
 
-plain = frozenset("-.=" + string.letters + string.digits)
+plain = frozenset("-.=" + string.ascii_letters.letters + string.ascii_letters.digits)
 
 
 def say(m):
